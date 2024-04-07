@@ -2606,6 +2606,10 @@ a {
   display: flex;
 }
 
+.tmp-padding {
+  padding-top: 10px;
+}
+
 .max-width-400 {
   width: 100%;
   max-width: 400px;
