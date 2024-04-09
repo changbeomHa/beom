@@ -3216,3 +3216,6 @@ a {
   grid-area: span 1 / span 1 / span 1 / span 1;
   
 }
+.hover-cursor:hover {
+  cursor: pointer; /* 원하는 커서 스타일로 변경 가능 */
+}
