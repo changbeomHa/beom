@@ -85,14 +85,19 @@
                     <div class="wrapper width-100 margin-bottom-24">
                         <div class="self_introduction_title margin-bottom-12 white-text">"즐거움을 주는 소프트웨어 개발자가 되기 위해"</div>
                         <div class="divider-line"></div>
-
+                        <script>
+                            function showPopup(event) {
+                                event.preventDefault();  // 기본 링크 이동 동작을 막음
+                                alert("준비중입니다.");
+                            }
+                        </script>
                         <br>
                         <p class="medium-m">게임, 영화, XR 등의 몰입형 콘텐츠를 개발 및 연구하고 있습니다. </p>
                         <br>
                         <p class="medium-m">사용자가 콘텐츠에 더욱 몰입할 수 있는 방법을 탐구하며, 새로운 경험을 제공하기 위해 공부하고 있습니다. <br>다양한 요소와 효과적인 기술로 사용자가 콘텐츠와 상호작용하는 방식을 개선하고, 콘텐츠의 가치를 향상시키고자 합니다.</p>
                         <br>     
                         <p class="medium-m line-height-setting">저의 개발 및 연구 분야는 다음과 같습니다.</p>
-                        <p class="medium-m line-height-setting">•&nbsp; 게임 개발 <br>•&nbsp; 아이트래킹<br>•&nbsp; 자연어 처리<br>•&nbsp; HCI<br>•&nbsp; 감정 전달력</p>
+                        <p class="medium-m line-height-setting">•&nbsp; 게임 개발 <br>•&nbsp; 음성 기술 - TTS 등<br>•&nbsp; 자연어 처리<br>•&nbsp; HCI<br>•&nbsp; 감정 전달력<br>•&nbsp; 아이트래킹</p>
 
                     </div>
                    
@@ -107,10 +112,16 @@
                 <div class="block-logos">
                     <a href="https://github.com/changbeomHa" target="_blank" class="logo-wrapper w-inline-block"><img src="./main/icons/github.png" loading="lazy" alt="Logo" class="logo"></a>
                     <a href="https://changbeomha.github.io/" target="_blank" class="logo-wrapper w-inline-block"><img src="./main/icons/blog.png" loading="lazy" alt="Logo" class="logo"></a>
-                    <a href="https://www.google.com/" target="_blank" class="logo-wrapper w-inline-block"><img src="./main/icons/youtube.png" loading="lazy" alt="Logo" class="logo"></a>
-                    <a href="https://www.google.com/" target="_blank" class="logo-wrapper w-inline-block"><img src="./main/icons/LinkedIn.png" loading="lazy" alt="Logo" class="logo"></a>
-                    <a href="https://www.google.com/" target="_blank" class="logo-wrapper last w-inline-block"><img src="./main/icons/tmplogo.png" loading="lazy" alt="Logo" class="logo"></a></div>
-            </div>
+                    <a href="#" onclick="showPopup(event)" target="_blank" class="logo-wrapper last w-inline-block">
+                        <img src="./main/icons/youtube.png" loading="lazy" alt="Logo" class="logo">
+                    </a>   
+                    <a href="#" onclick="showPopup(event)" target="_blank" class="logo-wrapper last w-inline-block">
+                        <img src="./main/icons/LinkedIn.png" loading="lazy" alt="Logo" class="logo">
+                    </a>    
+                    <a href="#" onclick="showPopup(event)" target="_blank" class="logo-wrapper last w-inline-block">
+                        <img src="./main/icons/tmplogo.png" loading="lazy" alt="Logo" class="logo">
+                    </a>            
+                </div>
         </section>
         <section id="Education" class="section padding-and-margin">
             <div class="block" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;">
@@ -167,6 +178,27 @@
                         <div class="experience-line"></div>
                     </div>
                     <div class="experience-items-wrapper">
+                        <div class="experience-item">
+                            <div class="experience-item-ellipse-wrapper">
+                                <div class="experience-item-ellipse"></div>
+                            </div>
+                            <div class="experience-item-content">
+                                <div class="main-info-and-date">
+                                    <div class="main-info">
+                                        <h3 class="h3 white-text">게임 공학 수업 조교</h3>
+                                        <div class="key-info">
+                                            <!--div class="medium-s">수업 보조</div>
+                                            <div class="circle-divider"></div>
+                                            <div class="medium-s">오큘러스 SDK 및 유니티 HID 관련 수업</div-->
+                                        </div>
+                                    </div>
+                                    <div class="medium-ms lime-text">2024. 09&nbsp; -&nbsp; 2024.12</div>
+                                </div>
+                                <div class="location">
+                                </div>
+                                <p class="medium-s max-width-400 tmp-padding">언리얼 엔진 기반 forward & inverse kinematics 실습 수업</br>Transformer 실습 수업</p>
+                            </div>
+                        </div>
                         <div class="experience-item">
                             <div class="experience-item-ellipse-wrapper">
                                 <div class="experience-item-ellipse"></div>
@@ -810,22 +842,22 @@
                 <div class="block-rows-wrapper">
                     <div class="line-padding-wrapper green-line">
                         <div class="main-info margin-bottom-16">
-                            <h3 class="h3 white-text">MOVIE CHAT : Sample Text</h3>
+                            <h3 class="h3 white-text">MoviEmoji : Sample Text</h3>
                             <div class="key-info">
                                 <div class="medium-s">conference</div>
                                 <div class="circle-divider"></div>
-                                <div class="medium-s">2024. &nbsp;09</div>
+                                <div class="medium-s">2024. &nbsp;12</div>
                             </div>
                         </div>
                         <p class="medium-s max-width-560">abstract content</p>
                     </div>
                     <div class="line-padding-wrapper blue-line">
                         <div class="main-info margin-bottom-16">
-                            <h3 class="h3 white-text">EYE READ : Sample Text</h3>
+                            <h3 class="h3 white-text">VoiceChat : Sample Text</h3>
                             <div class="key-info">
                                 <div class="medium-s">conference</div>
                                 <div class="circle-divider"></div>
-                                <div class="medium-s">2024. &nbsp;11</div>
+                                <div class="medium-s">2025. &nbsp;03</div>
                             </div>
                         </div>
                         <p class="medium-s max-width-560">abstract content</p>
